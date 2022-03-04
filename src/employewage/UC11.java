@@ -5,12 +5,17 @@ import java.util.Scanner;
 public class UC11 {
 	public static void main(String args[]) {
 		// welcome message
-		System.out.println("Welcome to employee wage computation problem");
+		;
 		System.out.println("Calculating wages for employees");
+		System.out.println("Equires for daily wages");
+		
 		EmpWageBuilder empWageBuilder = new EmpWageBuilder();
-		empWageBuilder.addCompanyDetailsForEmpWage("Mahindra", 10, 20, 16);
-		empWageBuilder.addCompanyDetailsForEmpWage("magic", 20, 20, 20);
-		empWageBuilder.addCompanyDetailsForEmpWage("goldman", 10, 20, 10);
-		empWageBuilder.companyEmpWage();
+		
+		empWageBuilder.addCompanyDetailsForEmpWage("Dominos", 10, 20, 16);
+		empWageBuilder.addCompanyDetailsForEmpWage("BigBe", 20, 20, 20);
+		empWageBuilder.addCompanyDetailsForEmpWage("mans", 10, 20, 10);
+		
+		empWageBuilder.companyEmpWage();  //enquirey
+		empWageBuilder.printEmpWageForCompany();
 	}
 }
